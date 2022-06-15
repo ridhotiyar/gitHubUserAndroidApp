@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        supportActionBar?.setTitle("GitHub Users")
+//        supportActionBar?.setTitle("GitHub Users")
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -57,10 +57,6 @@ class MainActivity : AppCompatActivity() {
         })
 
         return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return super.onOptionsItemSelected(item)
     }
 
     private val listUsers: ArrayList<Users>
